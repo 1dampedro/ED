@@ -1,0 +1,6 @@
+20180917
+
+git clone https://github.com/1dampedro/ED.git
+git config --global user.name pedrom
+git config --global user.email 1dam.pgarcia@institutoserpis.org
+git config --global push.default simple
