@@ -1,6 +1,17 @@
 20180917
 
-git clone https://github.com/1dampedro/ED.git
-git config --global user.name pedrom
-git config --global user.email 1dam.pgarcia@institutoserpis.org
-git config --global push.default simple
+git:
+	crear usuario y repositorio en github
+
+	git clone https://github.com/1dampedro/ED.git
+	git config --global user.name pedrom
+	git config --global user.email 1dam.pgarcia@institutoserpis.org
+	git config --global push.default simple
+
+20180924
+	En la máquina virtual con ubuntu 16.04
+	sudo add-apt-repository ppa:webupd8team/java
+	sudo apt-get update
+	sudo apt install oracle-java8-installer
+
+	Creamos HolaMundo.java, compilamos y ejecutamos.
