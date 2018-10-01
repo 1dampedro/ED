@@ -11,7 +11,23 @@ git:
 20180924
 	En la máquina virtual con ubuntu 16.04
 	sudo add-apt-repository ppa:webupd8team/java
-	sudo apt-get update
+	sudo apt update
 	sudo apt install oracle-java8-installer
 
 	Creamos HolaMundo.java, compilamos y ejecutamos.
+
+20180928
+	sudo apt update
+	sudo apt install git
+
+
+
+
+***APUNTES***
+(subir versión)- git commit -m "texto descripcion" 
+(ver los commits)- git log
+git push - pull
+
+20181001
+	Instalamos eclipse IDE for java developers desde la página oficial de eclipse.
+	Para instalar simplemente descomprimir.
