@@ -22,4 +22,13 @@ public class Vector {
 				return index;
 		return -1;
 	}
+	
+	public static int min(int[] v) {
+		int min = v[0];
+		for (int index=0; index < v.length;index++ )
+			if (v[index] < min)
+				min=v[index];
+				return index;
+			return min;
+	}
 }
