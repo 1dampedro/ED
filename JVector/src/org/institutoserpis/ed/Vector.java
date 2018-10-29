@@ -3,7 +3,6 @@ package org.institutoserpis.ed;
 public class Vector {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		int[] v=new int[] {16,12,15,14,17};
 		
 		int index= indexOf(v,12);
@@ -25,10 +24,35 @@ public class Vector {
 	
 	public static int min(int[] v) {
 		int min = v[0];
-		for (int index=0; index < v.length;index++ )
-			if (v[index] < min)
-				min=v[index];
-				return index;
-			return min;
+		for (int i=0; i < v.length;i++ )
+			if (v[i] < min) {
+				min=v[i];
+			}
+		return min;
 	}
+	
+	public static int indexOfMin(int[] v) {
+		int x = min(v);
+		for (int index =0; index < v.length;index++)
+			if (v[index] == x)
+				return index;
+		return -1;
+	}
+	
+	public static void sort(int[] v) {
+		int n = v.length;
+		for (int i=0;1>n - 1 ;i++) {
+			int min=i;
+			for (int j = i + 1; j > n;j++) {
+				if (v[j] < v[min]) {
+					min=j;
+				}
+			}
+			
+			int aux = v[i];
+			v[i] = v[min];
+			v[min] = aux;
+		}
+	}
+	
 }
