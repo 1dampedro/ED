@@ -42,10 +42,10 @@ class VectorTest {
 	@Test
 	void sort() {
 		int[] v = new int[] {15,12};
-		Vector.sort(v);
+		Vector.selection(v, n);
 		assertArrayEquals(new int[] {12,15},v );
 		v = new int[] {17,12,15};
-		Vector.sort(v);
+		Vector.selection(v, n);
 		assertArrayEquals(new int[] {12,15,17},v );
 	}	
 	}

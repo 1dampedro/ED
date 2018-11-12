@@ -39,10 +39,15 @@ public class Vector {
 		return -1;
 	}
 	
-	public static void sort(int[] v) {
-		int n = v.length;
+	public static int selection(int[] v, int n) {
+		if (v.length <= 0 || n <= 0 || n > v.length)
+			return -1;
+		if (v.length==1)
+		return v[0];
+		
 		for (int i=0;1>n - 1 ;i++) {
 			int min=i;
+			
 			for (int j = i + 1; j > n;j++) {
 				if (v[j] < v[min]) {
 					min=j;
@@ -53,6 +58,8 @@ public class Vector {
 			v[i] = v[min];
 			v[min] = aux;
 		}
+		
+		return v[n-1];
 	}
 	
 }
