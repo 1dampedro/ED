@@ -32,34 +32,49 @@ public class Vector {
 	}
 	
 	public static int indexOfMin(int[] v) {
-		int x = min(v);
-		for (int index =0; index < v.length;index++)
-			if (v[index] == x)
-				return index;
-		return -1;
+		int indexOfMin = 0;
+		for(int index=1;index<v.length;index++) {
+			if(v[index] < v[indexOfMin])
+				indexOfMin = index;
+		}
+		return indexOfMin;
 	}
 	
-	public static int selection(int[] v, int n) {
-		if (v.length <= 0 || n <= 0 || n > v.length)
-			return -1;
-		if (v.length==1)
-		return v[0];
-		
-		for (int i=0;1>n - 1 ;i++) {
-			int min=i;
-			
-			for (int j = i + 1; j > n;j++) {
-				if (v[j] < v[min]) {
-					min=j;
-				}
-			}
-			
-			int aux = v[i];
-			v[i] = v[min];
-			v[min] = aux;
+	public static int indexOfMin(int[] v, int initialIndex) {
+		int indexOfMin = initialIndex;
+		for (int index=initialIndex + 1; index<v.length;index++) {
+			if(v[index] < v[indexOfMin])
+				indexOfMin=index;
 		}
+		return indexOfMin;
+	}
+	
+	public static void swap (int[] v, int indexOne, int indexTwo) {
+		int aux= v[indexOne];
+		v[indexOne] = v[indexTwo];
+		v[indexTwo] = aux;
 		
-		return v[n-1];
+	}
+	
+	
+	public static void sort (int[] v) {
+		//indexOfSelected [0.n-2] index del elemento seleccionado
+		//indexOfMin [indexOfSelected,n-1]
+		//index[indexOfSelected,n-1] auxiliar para obtener indexOfMin
+//		int n = v.length;
+//		for (int indexOfSelected = 0; indexOfSelected < n-1; indexOfSelected++) {
+//			int indexOfMin = indexOfSelected;
+//			for (int index = indexOfSelected + 1; index < n; index++) {
+//				if (v[index] < v[indexOfMin])
+//					indexOfMin = index;
+//			}
+//			int aux=v[indexOfSelected];
+//			v[indexOfSelected] = v[indexOfMin];
+//			v[indexOfMin] = aux;
+//
+		for(int index=0;index<v.length -1;index++) {
+			swap(v, index, indexOfMin(v,index));
+		}
 	}
 	
 }

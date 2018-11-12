@@ -41,11 +41,33 @@ class VectorTest {
 	
 	@Test
 	void sort() {
-		int[] v = new int[] {15,12};
-		Vector.selection(v, n);
+		int[] v = new int[] {12};
+		Vector.sort(v);
+		assertArrayEquals(new int[] {12},v );
+		v = new int[] {15,12};
+		Vector.sort(v);
 		assertArrayEquals(new int[] {12,15},v );
 		v = new int[] {17,12,15};
-		Vector.selection(v, n);
+		Vector.sort(v);
 		assertArrayEquals(new int[] {12,15,17},v );
-	}	
+		v = new int[] {16,17,15,12,13};
+		Vector.sort(v);
+		assertArrayEquals(new int[] {12,13,15,16,17},v );
+		v = new int[] {16,14,15,16,17};
+		Vector.sort(v);
+		assertArrayEquals(new int[] {14,15,16,16,17},v );
+	}
+	
+	@Test
+	void sortEmpty() {
+		int[] v = new int[] {};
+		Vector.sort(v);
+		assertArrayEquals(new int[] {},v );
+	}
+	
+	@Test
+	void indexOfMinWithInitial() {
+		assertEquals(1,Vector.indexOfMin(new int[] {16,12,15,14,17}));
+		assertEquals(3,Vector.indexOfMin(new int[] {16,14,15,12,17}));
+	}
 	}
