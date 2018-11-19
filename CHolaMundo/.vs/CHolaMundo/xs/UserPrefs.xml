@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{93A1876F-E9D9-4D90-AE72-8F9B6A26D81C}|Default">
+  <MonoDevelop.Ide.ItemProperties.CHolaMundo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CHolaMundo/Program.cs">
+    <Files>
+      <File FileName="CHolaMundo/Program.cs" Line="10" Column="48" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

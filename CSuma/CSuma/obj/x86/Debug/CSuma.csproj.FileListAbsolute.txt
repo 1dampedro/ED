@@ -1,0 +1,6 @@
+/home/pedrom/ED/CSuma/CSuma/bin/Debug/CSuma.exe
+/home/pedrom/ED/CSuma/CSuma/bin/Debug/CSuma.pdb
+/home/pedrom/ED/CSuma/CSuma/obj/x86/Debug/CSuma.csprojAssemblyReference.cache
+/home/pedrom/ED/CSuma/CSuma/obj/x86/Debug/CSuma.csproj.CoreCompileInputs.cache
+/home/pedrom/ED/CSuma/CSuma/obj/x86/Debug/CSuma.exe
+/home/pedrom/ED/CSuma/CSuma/obj/x86/Debug/CSuma.pdb

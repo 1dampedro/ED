@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CHolaMundo", "CHolaMundo\CHolaMundo.csproj", "{93A1876F-E9D9-4D90-AE72-8F9B6A26D81C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93A1876F-E9D9-4D90-AE72-8F9B6A26D81C}.Debug|x86.ActiveCfg = Debug|x86
+		{93A1876F-E9D9-4D90-AE72-8F9B6A26D81C}.Debug|x86.Build.0 = Debug|x86
+		{93A1876F-E9D9-4D90-AE72-8F9B6A26D81C}.Release|x86.ActiveCfg = Release|x86
+		{93A1876F-E9D9-4D90-AE72-8F9B6A26D81C}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal
