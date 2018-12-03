@@ -12,8 +12,6 @@ namespace CVector
 
         public static int BinarySearch(int[] v, int x){
             int count = v.Length;
-            if (count == 0)
-                return -1;
             int left = 0;
             int right = count - 1;
             int middle = (right + left) / 2;
@@ -24,6 +22,10 @@ namespace CVector
                     right = middle - 1;
                 middle = (left + right) / 2;
             }
+            if (left > right)
+                return -1;
+            if (v[middle] == x)
+                return middle;
             return -2;
         }
 
