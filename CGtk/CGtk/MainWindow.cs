@@ -6,16 +6,22 @@ public partial class MainWindow : Gtk.Window
     public MainWindow() : base(Gtk.WindowType.Toplevel)
     {
         Build();
-        buttonAceptar.Clicked += delegate {
-            String nombre = entryNombre.Text;
-            labelHola.Text = "Hola " + nombre;
-            Console.WriteLine("Hecho click en buttonAceptar con nombre " + nombre);
+        button1.Clicked += delegate
+        {
+            labelResultado.LabelProp = "1";
+        };
+        button2.Clicked += delegate
+        {
+            labelResultado.LabelProp = "2";
+        };
+        button3.Clicked += delegate
+        {
+            labelResultado.LabelProp = "3";
+        };
+        button4.Clicked += delegate
+        {
+            labelResultado.LabelProp = "4";
         };
     }
-
-    protected void OnDeleteEvent(object sender, DeleteEventArgs a)
-    {
-        Application.Quit();
-        a.RetVal = true;
-    }
+   
 }
