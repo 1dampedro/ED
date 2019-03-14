@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity{
 
                 LinearLayout.LayoutParams lParams = new LinearLayout.LayoutParams(
                         300, LinearLayout.LayoutParams.WRAP_CONTENT);
-                lParams.setMargins(20, 0, 20, 0);
+                lParams.setMargins(15, 0, 15, 0);
 
                 img.setLayoutParams(lParams);
                 img.setScaleType(ImageView.ScaleType.FIT_CENTER);
@@ -71,11 +71,10 @@ public class MainActivity extends AppCompatActivity{
                 img.setEnabled(false);
 
                 lineas[i].addView(img);
-                randomNumero();
-                }
-
             }
+
         }
+    }
 
     private void prepararRandom() {
         for (int i = 0; i < ((contenedor.getChildCount()*4) / 2); i++) {
@@ -103,12 +102,17 @@ public class MainActivity extends AppCompatActivity{
 
     @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
     private void PonerImagenes() {
+
         for (int i = 0 ;i < contenedor.getChildCount(); ++i)
         {
             for(int x = 0 ;x < 4; x++) {
-                lineas[i].getChildAt(x).setBackground(imagenes[randomNumero()]);
+
+              //  lineas[i].getChildAt(x).setBackgroundResource(lineas[i].getChildAt(x).setBackgroundDrawable(imagenes[randomNumero()]));
             }
         }
     }
 
+    private void img(){
+
+    }
 }
