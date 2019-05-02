@@ -1,0 +1,9 @@
+Anotaciones del proyecto pcsharp
+Agenda sencilla (nombre/telefono):
+
+- Mostrar agenda en lista
+- Añadir nuevas entradas
+- Modificar entradas
+- Eliminar
+
+Se persiste la info en un json.
